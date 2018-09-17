@@ -1,0 +1,66 @@
+/********Default params********/
+/*<h1>&hellip;&vellip;&hellip;</h1>*/
+* { box-sizing: border-box }
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  width: 100%;
+  min-height: 100%;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,hr, div, header, footer {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+li {
+  list-style-type: none;
+}
+header, footer {
+	background-color: #1b1c1d;
+  	color: rgba(255, 255, 255, 0.9);
+  	min-height: 45px;
+}
+.nav_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 40px;
+}
+.nav_item:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    
+}
+.nav_link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.logo {
+  margin-right: 50%;
+}
+.hero_text_container {
+  font-size: 1.5em;
+}
+.hero_text_container {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 25%;
+    text-align: center;
+}
+.hero_text_header {
+  text-transform: uppercase;
+}
+.hero_button {
+  padding: 5px;
+  font-weight: bold;
+    line-height: 1em;
+    font-style: normal;
+  background: #2185d0;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}

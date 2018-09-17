@@ -1,0 +1,72 @@
+/********Default params********/
+/*<h1>&hellip;&vellip;&hellip;</h1>*/
+* { box-sizing: border-box }
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  width: 100%;
+  min-height: 100%;
+  background-color: #1b1c1d;
+  color: rgba(255, 255, 255, 0.9);
+}
+h1,h2,h3,h4,h5,h6,ul,li,p,hr, div, header, footer {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+li {
+  list-style-type: none;
+}
+header, footer {
+	background-color: #1b1c1d;
+  	color: rgba(255, 255, 255, 0.9);
+  	min-height: 45px;
+}
+.nav_menu {
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+}
+.nav_item:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    
+}
+.nav_link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.logo {
+	margin-right: 50%;
+}
+.hero_text_container {
+    font-size: 1.14285714rem;
+}
+.hero_text_container {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    margin-top: 50%;
+}
+.hero_text_header {
+	font-size: 0.7em;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+.hero_button {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1em;
+    line-height: 1em;
+    font-style: normal;
+    margin-top: 15px;
+	background: #2185d0;
+	color: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+}

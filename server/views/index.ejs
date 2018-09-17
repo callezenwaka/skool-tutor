@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon/favicon.ico">
+    <title>Welcome to Firebase Hosting</title>
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> -->
+    <link rel="stylesheet" type="text/css" href="/styles/blog-mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:690px) and (max-width: 964px)" href="/styles/blog-mini.css" />
+   <link rel="stylesheet" type="text/css" media="screen and (min-width:965px)" href="/styles/blog-desktop.css" />
+  </head>
+  <body>
+    <div class="page_overlay" id="page_overlay"></div>
+    <div class="container" id="container">
+      <header class="header" id="header">
+        <div class="logo" id="logo"><h3>&vellip;&hellip;&vellip;</h3></div>
+        <nav>
+          <ul class="nav_menu" id="nav_menu">
+            <li class="nav_item <%= typeof page !== 'undefined' && page === 'home' ? 'active' : '' %>"><a class="nav_link" href="/">Home</a></li>
+            <li class="nav_item <%= typeof page !== 'undefined' && page === 'about' ? 'active' : '' %>"><a class="nav_link" href="/about">About us</a></li>
+            <li class="nav_item <%= typeof page !== 'undefined' && page === 'posts' ? 'active' : '' %>"><a class="nav_link" href="/posts">Blog</a></li>
+            <li class="nav_item <%= typeof page !== 'undefined' && page === 'tutorials' ? 'active' : '' %>"><a class="nav_link" href="/tutorials">Tutorials</a></li>
+            <li class="nav_item <%= typeof page !== 'undefined' && page === 'courses' ? 'active' : '' %>"><a class="nav_link" href="courses">Courses</a></li>
+          </ul>
+        </nav>
+        <div class="nav_menu_toggle" id="nav_menu_toggle">
+          <div class="nav_menu_bar1"></div>
+          <div class="nav_menu_bar2"></div>
+          <div class="nav_menu_bar3"></div>
+          <div class="nav_menu_toggle_name" id="nav_menu_toggle_name">menu</div>
+        </div>
+        <!-- <div class="logo-mobile"><h3>&vellip;&hellip;&vellip;</h3></div> -->
+      </header>
+      <div class="message" id="message">
+        <h2>Welcome Home</h2>
+        <h1>Firebase Hosting Setup Complete</h1>
+        <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+          <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+        <p id="load">Firebase SDK Loading&hellip;</p>
+      </div>
+      <footer class="footer">
+        <span class="footer_content">All right reserved. &copy; <span id="year">2018</span>  <span><a class="page_link" href="#">Terms and Conditions</a> ♥</span></span>
+      </footer>
+    </div>
+    <script src="/scripts/blog.js"></script>
+  </body>
+</html>

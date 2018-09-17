@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+	<div class="main_container">
+	  <div class="page_content">
+			<div class="page_head"><h2 class="page_header"><strong><%=post.title%></strong></h2><hr class="scotch-rule"></div>
+			<p class=""><%=post.description%></p>
+	    <a class="page_button blog_details" href="/posts/<%= post.id %>/edit">Edit Post</a>
+	    <form action="/posts/<%= post.id %>?_method=DELETE" method="POST">
+	      <button class="page_button">Delete Post</button>
+	    </form>
+	  </div>
+	</div>
+<% include ../partials/footer %>
